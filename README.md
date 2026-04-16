@@ -100,5 +100,7 @@ So, let’s write the report for this alert.
 We successfully finished the lab.
 <img width="1896" height="918" alt="{798E6D48-A6FD-4128-B98F-AB108F244306}" src="https://github.com/user-attachments/assets/d4e21732-3400-4655-a987-57c25ea488cb" />
 
+<img width="1753" height="911" alt="{B6A1691F-1FF2-4221-A7AC-2439FAA387AD}" src="https://github.com/user-attachments/assets/96cf358c-2ab5-4340-8412-ed9cfb1f38bb" />
+
 ### Area to improve:
 Improving report writing skills
