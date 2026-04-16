@@ -21,6 +21,12 @@ after we start the lab the first thing will see is the Dashbord
 
 <img width="1846" height="912" alt="{04642EAC-3BC4-4FF4-9673-6A9302541A36}" src="https://github.com/user-attachments/assets/2c1bea0c-26b3-4786-9b6a-05f3633cbe92" />
 
+let see the docmention and read about the company we procat
+
+<img width="1858" height="904" alt="{96EA312A-5387-465F-8194-08F6A6EE35BF}" src="https://github.com/user-attachments/assets/5cab45ce-514f-4637-8777-3f2e24e6ddfa" />
+here we see the employee name ip and there roll in the comapny
+
+
 in the **Alert queue** we see the first alert 
 <img width="1856" height="910" alt="{2A030A5A-933E-4006-BF57-F7DA4A0B9307}" src="https://github.com/user-attachments/assets/23a0a8ea-1894-48a8-a790-f2537e9bb975" />
 
@@ -39,14 +45,32 @@ Now if we look to the above log we see that there is a massage come from  h.harr
 here we write the report as a false positive explaining why it is false positive 
 
 <img width="1844" height="916" alt="{41D011B4-FF59-4102-AEAD-4AD24B30BFF6}" src="https://github.com/user-attachments/assets/5f4c78da-64b6-458f-8d0a-e2dab29fd853" />
-next 
-<img width="1837" height="898" alt="{D21078C9-7363-459A-8BAE-07EF04A1E8D6}su" src="https://github.com/user-attachments/assets/2ab6e07e-f6be-4a2c-a081-3596f137bd60" />
 
-here we see that there is suspiciios links so lets start invastion by search in splunk for that suspicios link bit.ly
-<img width="1847" height="912" alt="{A1637359-4BC8-4860-9463-09E0138F1F7B}sus" src="https://github.com/user-attachments/assets/3ba927f1-6dac-470a-9824-8d1030329103" />
+next we have this alert 
 
-here we sea that the employee whcih is 	h.harris@thetrydaily.thm is clicing in that link and and that regest is blocked by the firewall and the destination is  67.199.248.11
+<img width="1851" height="891" alt="{AF917955-384F-4E59-8964-51B40891CF75}" src="https://github.com/user-attachments/assets/256b556b-b440-4d94-a8ee-415f51ee99e1" />
 
-now let check and see if that ip is maliusions by check it in the tryhackme local threat intalligence 
+here as we see here this reguest is comming form amazon.amazon.biz but here is the suspicions thing is that amazon end with .com TLD here the attacker whant the employee to thing that this rguest is comming from amazon and he add urgents to make him like to the link and there is other thing is that amazon will not use links like http://bit.ly/3sHkX3da12340 if its from the realy amazon they mayuse something like check.amazon.com so this is true postitfe
 
+and let write the report
+<img width="1849" height="908" alt="{69FC4F19-02DF-4808-8888-5EAA07729970}" src="https://github.com/user-attachments/assets/b57010a2-4e45-4294-8002-f337b061226a" />
+it a true postive alert the attacker want the employee to click in the URL using the fear techic and the attacker pretnted to be legitiment website
 
+next alert 
+<img width="1851" height="922" alt="{18AA5514-39E1-4FD3-B796-59945434E07B}c" src="https://github.com/user-attachments/assets/7d64122f-1849-41b4-8431-02d772cc2338" />
+it seem like the employee click to that malilios URL but fortunatly the firwall blocked that reguest let see what happend in splunk
+
+<img width="1845" height="911" alt="{39C8C39D-CEE5-45F8-BDC5-4E85A500C3F8}ee" src="https://github.com/user-attachments/assets/99c26c2c-f4e6-460e-9cd3-e5c305470a23" />
+
+as we see here the source ip is 10.20.2.17 which is the employee and the destnation ip address is 67.199.248.11
+let see the local tryhackme threat intelligent and chek that ip address(even thoue we know from the prives alert that this URL is malilious)
+
+<img width="1855" height="899" alt="{3E12FF05-3697-4C9E-8608-9A2781605A2D}" src="https://github.com/user-attachments/assets/05ee958c-56fa-4bc7-bfbc-9ef6474bc2d3" />
+here we see that the threat intelligent classfied this ip as malilious and we know that this URL bit.ly/3sHkX3da12340 is a lso malilious(form the previous alert)
+now let start writing report 
+
+<img width="1843" height="910" alt="{9F000C72-CD74-4AC3-AE0E-B8F111FCE2EE}" src="https://github.com/user-attachments/assets/c73188d1-313e-41a3-8a27-f91336e00c0e" />
+and we close this alert 
+<img width="1846" height="905" alt="{E849A9D8-68D3-46DA-AB24-67F0C91B6D62}phisiong" src="https://github.com/user-attachments/assets/ae6b2a0f-92d9-426d-a146-f7ec377e785c" />
+here it is obvious that this alert is Phishing becase here we see a massage from no-reply@m1crosoftsupport.co urge the employee to to scure has Microsoft account
+here first we see that this URL m1crosoftsupport is pretnd to be from microsoft the attacker changed the (i) in microsoft to (1) to be m1crosoft
